@@ -24,8 +24,8 @@ function on_touch_start(evt)
 		
 		var color = random_color();
 		
-		c.setAttribute("stroke", "red");
-		c.setAttribute("fill", "red");
+		c.setAttribute("stroke", color);
+		c.setAttribute("fill", color);
 		svg.appendChild(c);
 		
 		
