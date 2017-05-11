@@ -17,9 +17,9 @@ document.addEventListener("mousedown", on_touch);
 	 recognition.stop();
  }
  
- recognition.onend = on_end();
- recognition.onsoundend = on_end();
- recognition.onspeechend = on_end();
+ recognition.onend = on_end;
+ recognition.onsoundend = on_end;
+ recognition.onspeechend = on_end;
  
  recognition.onresult = function (e){
 	 document.getElementById("text").innerHTML = e.results[0][0].transcript + " " + e.results[0][0].confidence;
